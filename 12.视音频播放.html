@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 1. 直接在audio的属性中添加文件（都可以生效）-->
+		<audio src="./source/audio.mp3" controls="" autoplay="" loop=""></audio>
+		<audio src="./source/audio.mp3" controls autoplay loop ></audio>
+		
+		<!-- 2. 通过source添加。（这两个都可以显示，只不过最终只生效其中一个）-->
+		<audio controls="" autoplay="" loop="">
+			对不起，您的浏览器不支持，请进行升级或更换浏览器。
+			<source src="source/flower.mp4">
+			<source src="source/flower.webm">
+		</audio>		
+		
+		<!-- 3. 通过外部embed添加,这个是可以显示的。-->
+		<embed src="source/flower.mp4" width="400" height="200" type="audio/mp4"></embed>       
+		
+		
+		<!-- 4. 在外部添加source（不符合语法，也不生效。） -->
+		<source src="source/flower.webm">	  <!-- 这个出不来，因为没放到 audio标签中  -->
+		
+		<!-- 5. 对内部使用embed （不符合语法，也不生效。）-->
+		<video controls="controls" autoplay="autoplay" loop="loop">
+			<embed src="source/flower.mp4" width="400" height="200" type="video/mp4"></embed>
+			对不起，您的浏览器不支持，请进行升级或更换浏览器。			
+		</video>
+	</body>
+</html>

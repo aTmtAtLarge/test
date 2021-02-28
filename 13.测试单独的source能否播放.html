@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<!-- 音频最终测试 -->
+		<audio controls autoplay loop>
+			对不起，您的浏览器不支持，请进行升级或更换浏览器。
+			<!-- source不可以使用宽高；embed可以使用宽高，但是对音频播放不管用 -->
+			<embed src="source/audio.mp3" height="1000px" ></embed>
+			<!-- <source src="./source/audio.mp3"> -->
+		</audio>
+		<source src="./source/audio.mp3" controls> 
+		
+		<!-- 视频最终测试 -->
+		<video controls="controls" autoplay="autoplay" loop="loop">
+			对不起，您的浏览器不支持，请进行升级或更换浏览器。
+			<!-- source不可以使用宽高；embed可以使用宽高，但是对音频播放不管用 -->
+			<embed src="source/flower.mp4" width="400" height="200" type="video/mp4"></embed>
+			<source src="./source/flower.mp4" >
+		</video>
+		<embed src="source/flower.mp4" width="400" height="200" type="audio/mp4"></embed>
+	</body>
+</html>
+
+
+
